@@ -1,0 +1,327 @@
+:root{
+    --light:  linear-gradient(100deg, #ffffff, #a6d4e7);
+    --standard: linear-gradient(100deg, #000000, #003d52);
+    --pink: linear-gradient(100deg, #e741d1, #fcd0e1);
+}
+* {
+    font-family: cursive;
+    background-repeat:inherit;
+}
+body {
+    background-image: var(--standard);
+    height: 100vh;
+}
+.color {
+    border: 1px solid white;
+    margin: 50px 30px 0 0 ;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color:hover{
+    box-shadow: 0px 1px 3px 3px white ;
+    cursor: pointer;
+}
+.standard{
+    background-image: var(--standard);
+}
+.light{
+    background-image: var(--light);
+}
+.pink{
+    background-image: var(--pink);
+}
+.top {
+    display: flex;
+    justify-content: flex-end;
+    height: 20%;
+}
+.bottom {
+    color: #fff;
+    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: calc(100vh - 82px); */
+    height: 80%;
+}
+.bottom h3 {
+    border-right: 2px solid rgb(255, 255, 255);
+    font-size: 4rem;
+    animation: cursorAnimation 1s infinite;
+}
+@keyframes cursorAnimation {
+    0%{
+        border-right: 2px solid rgb(255, 255, 255);
+    }
+    100%{
+        border-right: 2px solid transparent;
+    }
+    
+}
+.bottom form {
+    width: 50%;
+    display: flex;
+}
+.bottom form input {
+    flex: 5;
+}
+.bottom form input[type="submit"] {
+    flex: 1;
+    color: #003d52;
+    background-color: #a6d4e7;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 0.5s;
+}
+.bottom form input[type="submit"]:hover{
+    box-shadow: 0 0 5px 5px white;
+    cursor: pointer;
+}
+.bottom input {
+    background-color: #000000;
+    color: #a6d4e7;
+    border: none;
+    padding: 20px;    
+}
+.bottom form input[type="text"] {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: all 0.5s;
+}
+.bottom form input[type="text"]:hover {
+    background-color: rgb(19, 18, 18) ;
+}
+.bottom ul {
+    list-style: none;    
+}
+.bottom ul li {
+    background-color: #000000;
+    color: #a6d4e7;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    border-radius: 30px;
+    gap: 10px;
+}
+.bottom ul li i{
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 5px;
+    background-color: #a6d4e7;
+    border-radius: 100%;
+    color: #003d52;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.bottom ul li i:hover {
+    box-shadow: 0 0 5px 5px white;
+    cursor: pointer;
+}
+ @media only screen and (max-width:582px){
+   .top{
+        justify-content: center;
+    } 
+}
+@media only screen and (max-width:497px){
+    .bottom form {
+        width: 100%;
+    }
+}
+#datetime {
+    margin: 0 1rem;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pink{
+    background-image: var(--pink);
+    color: #d12cbb;
+}
+.pink input[type = "text"]{
+    background-color: #fcd0e1;
+    color: #d12cbb;
+}
+.pink input[type="text"]:hover {
+    background-color: rgb(248, 149, 227) !important ;
+}
+.pink input[type = "submit"]{
+    background-color: #d12cbb !important;
+    color: #fcd0e1 !important;
+}
+.pink ul{ 
+    /* background-color: #fcd0e1 !important; */
+    color: #d12cbb !important;
+}
+.pink ul li { 
+    background-color: #fcd0e1 !important;
+    color: #d12cbb !important;
+}
+.pink ul li i{
+    background-color: #f5a8c6 !important;
+    color: #d12cbb !important;
+}
+.pink h3{
+    color: #d12cbb !important;
+}
+.pink p{
+    color: #d12cbb !important;
+}
+.light{
+    background-image: var(--light);
+    color: #5f48e2;
+}
+.light input[type = "text"]{
+    background-color: #b6c1fa;
+    color: #5f48e2;
+}
+.light h3{
+    color: #5f48e2 !important;
+}
+.light p{
+    color: #5f48e2 !important;
+}
+.light input[type="text"]:hover {
+    background-color: rgb(163, 202, 253) !important ;
+}
+.light input[type = "submit"]{
+    background-color: #5f48e2 !important;
+    color: #b6c1fa !important;
+}
+.light ul { 
+    /* background-color: #b6c1fa !important; */
+    color: #5f48e2 !important;
+}
+.light ul li { 
+    background-color: #b6c1fa !important;
+    color: #5f48e2 !important;
+}
+.light ul li i{
+    background-color: #8a93c0 !important;
+    color: #5f48e2 !important;
+}
+
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-25deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-25deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+}
+
+
+#title {
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+    white-space: pre;
+    overflow: hidden;     
+    letter-spacing: 0.20rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 460px;
+  }
+  
+#title {
+    animation: animated-text 2s steps(18,end) 0.5s 1 normal both,
+        animated-cursor 700ms steps(18,end) infinite;
+  }
+
+#title.darker-title {
+    animation: animated-text 2s steps(11,end) 0.5s 1 normal both, darker-animated-cursor 750ms steps(11,end) infinite;
+}
+@keyframes animated-text{
+    from{width: 0%;}
+    to{width: 460px;}
+  }
+    
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(0, 0, 0, 0.75);}
+    to{border-right-color: transparent;}
+  }
+
+  @keyframes darker-animated-cursor {
+    from{border-right-color: #01394c;}
+    to{border-right-color: transparent;}
+  }
+
+
+
+  .completed {
+    transition: 0.2s;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+
+.delete {
+    animation: delete-ani 0.5s forwards;
+}
+@keyframes delete-ani {
+    from{
+        transform: rotateX(0deg) translateY(0px);
+        opacity: 1;
+    }
+    to{
+        transform: rotateZ(30deg) translateY(200px);
+        opacity: 0;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .flexrow-container {
+        align-self: unset;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #header {
+        font-size: 2rem;
+    }
+}
+
+#datetime ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
